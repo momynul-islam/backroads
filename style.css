@@ -1,0 +1,116 @@
+/* *********************
+    Global start
+   ********************** */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --primarycolor: #3fd0d4;
+  --mainwhite: #fff;
+  --offwhite: #f7f7f7;
+  --mainblack: #222;
+  --maingrey: #ececec;
+  --darkgrey: #afafaf;
+  --maintransition: all 0.3s linear;
+  --mainspacing: 0.4rem;
+  --lightshadow: 0.2rem 0.5rem 0.3rem 0 rgba(0, 0, 0, 0.25);
+  --darkshadow: 0.4rem 1rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--mainblack);
+  background: var(--offwhite);
+  line-height: 6rem;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+/* *********************
+    Global end
+   ********************** */
+
+/* *********************
+    utilites start
+   ********************** */
+
+/* *********************
+    utilites end
+   ********************** */
+
+/* *********************
+    nav section start
+   ********************** */
+
+/* *********************
+    nav section end
+   ********************** */
+
+/* *********************
+    home section start
+   ********************** */
+
+/* *********************
+    home section end
+   ********************** */
+
+/* *********************
+    about section start
+   ********************** */
+
+/* *********************
+    about section end
+   ********************** */
+
+/* *********************
+    service section start
+   ********************** */
+
+/* *********************
+    service section end
+   ********************** */
+
+/* *********************
+    feature section start
+   ********************** */
+
+/* *********************
+    feature section end
+   ********************** */
+
+/* *********************
+    gallary section start
+   ********************** */
+
+/* *********************
+    gallary section end
+   ********************** */
+
+/* *********************
+    deal section start
+   ********************** */
+
+/* *********************
+    deal section end
+   ********************** */
+
+/* *********************
+    footer section start
+   ********************** */
+
+/* *********************
+    footer section end
+   ********************** */
