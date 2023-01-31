@@ -27,8 +27,10 @@ body {
   font-family: "Lato", sans-serif;
   color: var(--mainblack);
   background: var(--offwhite);
-  line-height: 6rem;
+  line-height: 3.2rem;
+  letter-spacing: var(--mainspacing);
   font-size: 1.6rem;
+  position: relative;
 }
 
 h1,
@@ -38,6 +40,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
 }
 /* *********************
     Global end
@@ -46,7 +49,32 @@ h6 {
 /* *********************
     utilites start
    ********************** */
+a,
+a:link {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
 
+span {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  font-size: 1.6rem;
+  color: var(--mainwhite);
+  letter-spacing: var(--mainspacing);
+  text-transform: uppercase;
+  transition: var(--maintransition);
+}
 /* *********************
     utilites end
    ********************** */
@@ -54,7 +82,100 @@ h6 {
 /* *********************
     nav section start
    ********************** */
+.nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--mainwhite);
+  padding: 2rem;
+  box-shadow: var(--lightshadow);
+}
 
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-bar {
+  display: inline-block;
+  font-size: 2rem;
+  color: var(--primarycolor);
+  transition: var(--maintransition);
+}
+
+.menu-bar:hover {
+  transform: scale(1.5);
+}
+
+.logo {
+  height: 2rem;
+}
+
+.links {
+  display: none;
+  margin-top: 2rem;
+}
+
+.show {
+  display: block;
+}
+
+.links li {
+  margin-bottom: 1rem;
+}
+
+.links a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: var(--mainspacing);
+  color: var(--mainblack);
+  transition: var(--maintransition);
+}
+
+.links a:hover {
+  color: var(--primarycolor);
+}
+
+.socials {
+  display: none;
+}
+
+.socials i {
+  cursor: pointer;
+  margin-left: 1.5rem;
+  font-size: 2rem;
+  color: var(--primarycolor);
+  transition: var(--maintransition);
+}
+
+.socials i:hover {
+  color: var(--darkgrey);
+  transform: translateY(-0.8rem);
+}
+
+@media only screen and (min-width: 1180px) {
+  .nav-header {
+    display: inline-block;
+  }
+  .menu-bar {
+    display: none;
+  }
+  .nav {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .socials {
+    display: block;
+  }
+}
 /* *********************
     nav section end
    ********************** */
@@ -62,7 +183,45 @@ h6 {
 /* *********************
     home section start
    ********************** */
+.header {
+  background-image: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/main.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* height: calc(100vh - 6rem); */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.header-des {
+  text-align: center;
+  color: var(--mainwhite);
+}
+
+.header-title {
+  font-size: 5.2rem;
+  letter-spacing: 0.64rem;
+  line-height: 7.4rem;
+}
+
+.header-text {
+  width: 85%;
+  margin: 3.2rem auto;
+}
+
+.header-btn {
+  padding: 1.4rem 2.5rem;
+  background-color: transparent;
+  border: 0.2rem solid var(--mainwhite);
+}
+
+.header-btn:hover {
+  background-color: var(--mainwhite);
+  color: var(--primarycolor);
+}
 /* *********************
     home section end
    ********************** */
