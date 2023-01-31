@@ -111,6 +111,33 @@ img {
   background-color: transparent;
   color: var(--primarycolor);
 }
+
+input {
+  width: 100%;
+  display: block;
+  border: none;
+  outline: none;
+  transition: var(--maintransition);
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  width: auto;
+  background-color: transparent;
+  border: 1px solid var(--primarycolor);
+  display: inline-block;
+  transition: var(--maintransition);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primarycolor);
+  color: var(--mainwhite);
+}
+
+input::placeholder {
+  text-transform: uppercase;
+  padding: 1rem;
+}
 /* *********************
     utilites end
    ********************** */
@@ -460,6 +487,33 @@ img {
 /* *********************
     deal section start
    ********************** */
+.deal {
+  padding: 8rem;
+}
+
+.form {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="email"] {
+  min-width: 30rem;
+  max-width: 50rem;
+}
+
+input {
+  font-size: 1.6rem;
+  padding: 1rem 1.6rem;
+  border: 1px solid var(--darkgrey);
+}
+
+input:focus {
+  border: 1px solid var(--primarycolor);
+  color: var(--primarycolor);
+}
 
 /* *********************
     deal section end
@@ -468,7 +522,52 @@ img {
 /* *********************
     footer section start
    ********************** */
+.footer {
+  background-color: var(--mainblack);
+  color: var(--mainwhite);
+  padding: 8rem;
+  text-align: center;
+  text-transform: capitalize;
+}
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.footer-links a {
+  font-size: 2rem;
+  color: var(--mainwhite);
+  transition: var(--maintransition);
+}
+
+.footer-links a:hover {
+  color: var(--primarycolor);
+}
+
+.footer-socials i {
+  cursor: pointer;
+  font-size: 2.4rem;
+  margin-left: 1rem;
+  transition: var(--maintransition);
+}
+
+.footer-socials i:hover {
+  color: var(--primarycolor);
+  transform: translateY(1rem);
+}
+
+.copyright {
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer-links {
+    flex-direction: column;
+  }
+}
 /* *********************
     footer section end
    ********************** */
