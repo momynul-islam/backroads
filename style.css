@@ -324,7 +324,41 @@ img {
 /* *********************
     service section start
    ********************** */
+.services {
+  padding: 8rem;
+  background-color: var(--maingrey);
+}
 
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.service-item {
+  border: 1px solid var(--darkgrey);
+  padding: 1rem;
+}
+
+.item-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.item-logo {
+  font-size: 2rem;
+}
+
+.service-item p {
+  width: 85%;
+}
+
+@media only screen and (max-width: 1180px) {
+  .service {
+    flex-wrap: wrap;
+  }
+}
 /* *********************
     service section end
    ********************** */
