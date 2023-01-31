@@ -99,6 +99,18 @@ img {
   text-transform: uppercase;
   transition: var(--maintransition);
 }
+
+.global-btn {
+  margin-top: 3.2rem;
+  background-color: var(--primarycolor);
+  padding: 1.4rem 2.5rem;
+  border: 0.2rem solid var(--primarycolor);
+}
+
+.global-btn:hover {
+  background-color: transparent;
+  color: var(--primarycolor);
+}
 /* *********************
     utilites end
    ********************** */
@@ -281,18 +293,6 @@ img {
   width: 50%;
 }
 
-.about-btn {
-  margin-top: 3.2rem;
-  background-color: var(--primarycolor);
-  padding: 1.4rem 2.5rem;
-  border: 0.2rem solid var(--primarycolor);
-}
-
-.about-btn:hover {
-  background-color: transparent;
-  color: var(--primarycolor);
-}
-
 @media only screen and (max-width: 1200px) {
   .about-img img {
     position: static;
@@ -366,6 +366,47 @@ img {
 /* *********************
     feature section start
    ********************** */
+.feature {
+  padding: 8rem;
+  text-align: center;
+}
+
+.tours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tour {
+  border: 1px solid var(--darkgrey);
+  box-shadow: var(--lightshadow);
+  transition: var(--maintransition);
+  flex: 0 0 30rem;
+}
+
+.tour:hover {
+  box-shadow: var(--darkshadow);
+}
+
+.tour-des {
+  padding: 1rem;
+}
+
+.tour-title {
+  text-align: center;
+}
+
+.tour-info {
+  color: var(--darkgrey);
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+
+.tour-location {
+  color: var(--primarycolor);
+}
 
 /* *********************
     feature section end
